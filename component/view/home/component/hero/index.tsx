@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="flex flex-col items-center justify-center h-full">
             <div className="w-[40.795rem] h-[52.219rem] rounded-xl overflow-hidden relative z-10">
               <Image
-                src={"./dining-area-brazilian-folklore-decor.svg"}
+                src={"/dining-area-brazilian-folklore-decor.png"}
                 alt="LifetimeArt Hero Image"
                 objectFit="cover"
                 loading="eager"

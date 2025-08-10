@@ -1,6 +1,7 @@
 import Header from "@/component/header";
 import About from "@/component/view/home/component/about";
 import Hero from "@/component/view/home/component/hero";
+import Services from "@/component/view/home/component/services";
 import { Fragment } from "react";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Services />
     </Fragment>
   );
 }

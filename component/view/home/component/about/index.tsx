@@ -48,7 +48,7 @@ export default function About() {
           <div className="flex flex-col justify-center h-full">
             <div className="flex flex-col gap-1 mb-18">
               <div className="bg-[#28282C] py-2 px-3 rounded-full flex items-center gap-2 w-fit">
-                <p className="text-white text-sm">About us</p>
+                <p className="text-white font-semibold">About us</p>
               </div>
               <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
                 Home <br /> Improvement <br /> Specialists

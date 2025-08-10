@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* REACT SLICK SLIDER */
+.slick-initialized .slick-slide {
+  margin: 1rem;
+}

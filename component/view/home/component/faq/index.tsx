@@ -48,26 +48,53 @@ export default function Faq() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 overflow-hidden">
         <div className="container mx-auto grid grid-cols-1 min-[1440px]:!grid-cols-8 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
           <div className="col-span-1 min-[1440px]:!col-span-3 flex flex-col justify-start h-full mb-12 min-[1440px]:!mb-0">
             <div className="flex flex-col gap-1 items-center min-[1440px]:!items-start mb-12 min-[1440px]:!mb-18">
-              <Label text="FAQs" />
+              <Label text="FAQs" data-aos="fade-up" data-aos-duration="300" />
               <p className="text-center min-[1440px]:!text-left text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px] mb-2">
-                Answering Your <br /> Questions
+                <span
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-delay="300"
+                >
+                  Answering Your
+                </span>
+                <br />
+                <span
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-delay="600"
+                >
+                  Questions
+                </span>
               </p>
-              <p className="text-xl text-center min-[1440px]:!text-left text-[#3D3D47] leading-[170%] tracking-[-0.3px] w-auto min-[1440px]:!w-[30.125rem]">
+              <p
+                className="text-xl text-center min-[1440px]:!text-left text-[#3D3D47] leading-[170%] tracking-[-0.3px] w-auto min-[1440px]:!w-[30.125rem]"
+                data-aos="fade-up"
+                data-aos-duration="300"
+                data-aos-delay="900"
+              >
                 Got more questions? Send us your enquiry below
               </p>
             </div>
             <ButtonPrimary
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="1200"
               darkMode={false}
               label="Get in touch"
               className="mx-auto min-[1440px]:!mx-0"
               icon={<ArrowRightTopIcon className="text-white" />}
             />
           </div>
-          <div className="col-span-1 min-[1440px]:col-span-5 flex flex-col gap-5">
+          <div
+            className="col-span-1 min-[1440px]:col-span-5 flex flex-col gap-5"
+            data-aos="fade-left"
+            data-aos-duration="400"
+            data-aos-delay="1500"
+          >
             {faqList.map((item, index) => (
               <div
                 key={index}

@@ -44,18 +44,49 @@ export default function About() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 overflow-hidden">
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
           <div className="flex flex-col items-start h-full">
             <div className="flex flex-col gap-1 mb-18">
-              <Label text="About us" />
+              <Label
+                text="About us"
+                data-aos="fade-up"
+                data-aos-duration="300"
+              />
               <p className="text-[2.5rem] sm:text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
-                Home <br /> Improvement <br /> Specialists
+                <span
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-delay="300"
+                >
+                  Home.
+                </span>
+                <br />
+                <span
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-delay="600"
+                >
+                  Improvement.
+                </span>
+                <br />
+                <span
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-delay="900"
+                >
+                  Specialists
+                </span>
               </p>
             </div>
           </div>
           <div>
-            <p className="text-[#3D3D47] text-xl tracking-[-0.3px] leading-[170%]">
+            <p
+              className="text-[#3D3D47] text-xl tracking-[-0.3px] leading-[170%]"
+              data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="1200"
+            >
               Welcome to LifetimeArt , your trusted home improvement experts,
               dedicated to transforming homes with precision and care. With
               years of experience in building kitchens, bathrooms, garages, and
@@ -70,9 +101,16 @@ export default function About() {
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 min-[1440px]:!grid-cols-4 gap-28 sm:gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
           {aboutList.map((item, index) => {
             return (
-              <div key={index} className="w-[86%] min-[1440px]:!w-[14.375rem]">
+              <div
+                key={index}
+                className="w-[86%] min-[1440px]:!w-[14.375rem]"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay={index * 200}
+              >
                 <p className="font-light text-7xl text-[#101014]">
                   {item.result}
+                  {item.title === "Client satisfaction" && "%"}
                 </p>
                 <p className="font-semibold tracking-[-0.2px] leading-[30px] text-xl text-[#101014] mb-2">
                   {item.title}

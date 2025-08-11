@@ -6,6 +6,7 @@ import Footer from "@/component/footer";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AnimationProvider } from "@/provider/animationContext";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -25,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <AnimationProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AnimationProvider>
       </body>
     </html>
   );

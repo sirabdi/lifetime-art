@@ -2,7 +2,7 @@
 
 import { Fragment, ReactElement } from "react";
 
-interface Props {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
   darkMode?: boolean;
   icon: ReactElement;
@@ -14,10 +14,12 @@ export default function ButtonPrimary({
   icon,
   darkMode = true,
   className,
+  ...rest
 }: Props) {
   return (
     <Fragment>
       <button
+        {...rest}
         className={`py-2.5 px-4 rounded-full cursor-pointer ${
           darkMode
             ? "bg-[#FFFFFF1A] text-white backdrop-blur"

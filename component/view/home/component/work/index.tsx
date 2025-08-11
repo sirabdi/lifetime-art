@@ -57,11 +57,21 @@ export default function Work() {
       <div className="flex flex-col gap-2">
         <div className="container mx-auto py-[7.5rem] px-5 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
-            <Label text="Our work" />
-            <p className="text-center text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
+            <Label text="Our work" data-aos="fade-up" data-aos-duration="300" />
+            <p
+              className="text-center text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="300"
+            >
               Get inspired by our work
             </p>
-            <p className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]">
+            <p
+              className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="300"
+            >
               See how we&#39;ve transformed homes with our expert <br />
               craftsmanship and attention to detail.
             </p>
@@ -71,6 +81,9 @@ export default function Work() {
           {testimonialList.map((testimonial, index) => (
             <div
               className="h-auto min-[1440px]:!h-screen flex items-center"
+              data-aos-delay={index * 200}
+              data-aos-duration="500"
+              data-aos="fade-up"
               key={index}
             >
               <WorkCard {...testimonial} index={index} />

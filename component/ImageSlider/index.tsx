@@ -33,6 +33,9 @@ export default function ImageSlider({ items }: Props) {
           {allItems.map((src, idx) => (
             <div
               key={idx}
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay={idx * 150}
               className="flex-shrink-0 w-[400px] h-[500px] mx-3 relative overflow-hidden"
             >
               <Image

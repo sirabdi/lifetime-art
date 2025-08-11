@@ -39,7 +39,7 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between py-10 px-20 p-5 lg:py-10 lg:px-[1.875rem] min-[1440px]:!px-20">
-          <div>
+          <div data-aos="fade-down" data-aos-duration="300">
             <Image
               src={"/life-time-art-logo.png"}
               alt={`LifetimeArt Logo`}
@@ -50,11 +50,46 @@ export default function Header() {
             />
           </div>
           <ul className={`flex items-center gap-12 text-white`}>
-            <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Services</li>
-            <li className="cursor-pointer">Our Work</li>
-            <li className="cursor-pointer">FAQs</li>
-            <li className="cursor-pointer">Contact</li>
+            <li
+              className="cursor-pointer"
+              data-aos="fade-down"
+              data-aos-duration="300"
+              data-aos-delay="0"
+            >
+              About
+            </li>
+            <li
+              className="cursor-pointer"
+              data-aos="fade-down"
+              data-aos-duration="300"
+              data-aos-delay="100"
+            >
+              Services
+            </li>
+            <li
+              className="cursor-pointer"
+              data-aos="fade-down"
+              data-aos-duration="300"
+              data-aos-delay="200"
+            >
+              Our Work
+            </li>
+            <li
+              className="cursor-pointer"
+              data-aos="fade-down"
+              data-aos-duration="300"
+              data-aos-delay="300"
+            >
+              FAQs
+            </li>
+            <li
+              className="cursor-pointer"
+              data-aos="fade-down"
+              data-aos-duration="300"
+              data-aos-delay="400"
+            >
+              Contact
+            </li>
           </ul>
         </div>
       </div>

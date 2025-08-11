@@ -54,21 +54,36 @@ export default function Services() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2 bg-[#FAFAFA]">
+      <div className="flex flex-col gap-2 bg-[#FAFAFA] overflow-hidden">
         <div className="container mx-auto py-[7.5rem] px-10 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
-            <Label text="Services" />
-            <p className="text-5xl text-center text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
+            <Label text="Services" data-aos="fade-up" data-aos-duration="300" />
+            <p
+              className="text-5xl text-center text-[#101014] font-medium tracking-[-0.8px] leading-[55px]"
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="300"
+            >
               What we do
             </p>
-            <p className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]">
+            <p
+              className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]"
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="600"
+            >
               Find out which one of our services fit the needs of your project
             </p>
           </div>
         </div>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-18 pb-[7.5rem] px-10 min-[1440px]:!px-20">
           <div className="flex flex-col justify-center items-start">
-            <div className="w-[295px] lg:w-[432px] xl:w-[560px] min-[1440px]:!w-[600px] min-[1920px]:!w-[680px] h-[337px] lg:h-[493px] xl:h-[639px] min-[1440px]:!h-[685px] min-[1920px]:!h-[777px] relative z-10 overflow-hidden rounded-xl">
+            <div
+              className="w-[295px] lg:w-[432px] xl:w-[560px] min-[1440px]:!w-[600px] min-[1920px]:!w-[680px] h-[337px] lg:h-[493px] xl:h-[639px] min-[1440px]:!h-[685px] min-[1920px]:!h-[777px] relative z-10 overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-duration="400"
+              data-aos-delay="900"
+            >
               <Image
                 src={"/kitchen-area.png"}
                 alt="LifetimeArt Hero Image"
@@ -79,23 +94,29 @@ export default function Services() {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-2">
+          <div
+            className="flex flex-col justify-center items-center gap-2"
+            data-aos="fade-left"
+            data-aos-duration="400"
+            data-aos-delay="1200"
+          >
             <div>
               {servicesList.map((item, index) => (
-                <div key={index} className="py-5 border-b border-[#DBDAD9]">
+                <div
+                  key={index}
+                  className="py-5 border-b border-[#DBDAD9] group cursor-pointer"
+                  onClick={() =>
+                    setSelectedValue(selectedValue === index ? -1 : index)
+                  }
+                >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       {item.image}
-                      <p className="text-xl tracking-[-0.2px] leading-[120%] text-[#101014]">
+                      <p className="text-xl tracking-[-0.2px] leading-[120%] text-[#101014] group-hover:text-[#101014]/80 transition-colors">
                         {item.title}
                       </p>
                     </div>
-                    <button
-                      className="cursor-pointer flex items-center justify-center h-full transition-transform duration-300"
-                      onClick={() =>
-                        setSelectedValue(selectedValue === index ? -1 : index)
-                      }
-                    >
+                    <button className="cursor-pointer flex items-center justify-center h-full transition-transform duration-300">
                       <AddIcon
                         className={`transition-transform duration-300 ${
                           selectedValue === index ? "rotate-45" : "rotate-0"
@@ -110,7 +131,17 @@ export default function Services() {
                         : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="text-[#3D3D47] tracking-[-0.1px] leading-[170%]">
+                    <p
+                      className={`text-[#3D3D47] tracking-[-0.1px] leading-[170%] transition-transform duration-500 ${
+                        selectedValue === index
+                          ? "translate-x-0 opacity-100"
+                          : "translate-x-10 opacity-0"
+                      }`}
+                      style={{
+                        transitionDelay:
+                          selectedValue === index ? "100ms" : "0ms",
+                      }}
+                    >
                       {item.description}
                     </p>
                   </div>

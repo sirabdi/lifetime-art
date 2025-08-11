@@ -11,7 +11,11 @@ export default function Contact() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2 px-5 sm:px-5">
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-24 min-[1440px]:!gap-4 p-20 bg-[#101014] rounded-xl px-5 min-[1440px]:!px-20">
+        <div
+          className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-24 min-[1440px]:!gap-4 p-20 bg-[#101014] rounded-xl px-5 min-[1440px]:!px-20"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <div className="flex flex-col gap-12 justify-start h-full">
             <div className="flex flex-col gap-3">
               <Label text="Contact" />

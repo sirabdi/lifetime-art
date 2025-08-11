@@ -23,14 +23,31 @@ export default function Testimonial() {
       <div className="flex flex-col gap-2">
         <div className="container mx-auto py-[7.5rem] px-10 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
-            <Label text="Our work" />
-            <p className="text-center text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
+            <Label text="Our work" data-aos="fade-up" data-aos-duration="300" />
+            <p
+              className="text-center text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="300"
+            >
               Hear from our clients
             </p>
             <p className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]">
-              Hear from our happy clients about their experience working with{" "}
+              <span
+                data-aos="fade-up"
+                data-aos-duration="300"
+                data-aos-delay="600"
+              >
+                Hear from our happy clients about their experience working with
+              </span>
               <br />
-              Refit and the quality of our craftsmanship.
+              <span
+                data-aos="fade-up"
+                data-aos-duration="300"
+                data-aos-delay="900"
+              >
+                Refit and the quality of our craftsmanship.
+              </span>
             </p>
           </div>
         </div>

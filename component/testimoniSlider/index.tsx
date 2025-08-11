@@ -33,6 +33,9 @@ export default function TestimoniSlider({ items }: Props) {
             {allItems.map((item, i) => (
               <div
                 key={i}
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay={i * 200}
                 className={`w-[347px] h-[315px] ${
                   i % 2 === 1 ? "bg-[#E9ECF2]" : "bg-[#FAFAFA]"
                 } rounded-xl border border-[#E6E6E6] p-8 flex flex-col justify-between mx-3`}
@@ -70,6 +73,9 @@ export default function TestimoniSlider({ items }: Props) {
             {allItems.map((item, i) => (
               <div
                 key={i}
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay={(allItems.length - 5 - i) * 200}
                 className={`w-[347px] h-[315px] ${
                   i % 2 === 1 ? "bg-[#E9ECF2]" : "bg-[#FAFAFA]"
                 } rounded-xl border border-[#E6E6E6] p-8 flex flex-col justify-between mx-3`}

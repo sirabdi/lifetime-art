@@ -34,9 +34,9 @@ export default function Testimonial() {
             </p>
           </div>
         </div>
-        {/* <div className="pb-[7.5rem]">
+        <div className="pb-[7.5rem] hidden lg:block">
           <TestimoniSlider items={testimoniList} />
-        </div> */}
+        </div>
       </div>
     </Fragment>
   );

@@ -49,14 +49,14 @@ export default function Faq() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-6 gap-4 py-[7.5rem] px-10 sm:px-20">
-          <div className="col-span-1 sm:col-span-2 flex flex-col justify-start h-full mb-12 sm:mb-0">
-            <div className="flex flex-col gap-1 items-center sm:items-start mb-12 sm:mb-18">
+        <div className="container mx-auto grid grid-cols-1 min-[1440px]:!grid-cols-6 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
+          <div className="col-span-1 min-[1440px]:!col-span-2 flex flex-col justify-start h-full mb-12 min-[1440px]:!mb-0">
+            <div className="flex flex-col gap-1 items-center min-[1440px]:!items-start mb-12 min-[1440px]:!mb-18">
               <Label text="FAQs" />
-              <p className="text-center sm:text-left text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px] mb-2">
+              <p className="text-center min-[1440px]:!text-left text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px] mb-2">
                 Answering Your <br /> Questions
               </p>
-              <p className="text-xl text-center sm:text-left text-[#3D3D47] leading-[170%] tracking-[-0.3px] w-auto sm:w-[30.125rem]">
+              <p className="text-xl text-center min-[1440px]:!text-left text-[#3D3D47] leading-[170%] tracking-[-0.3px] w-auto min-[1440px]:!w-[30.125rem]">
                 Got more questions? Send us your enquiry below
               </p>
             </div>

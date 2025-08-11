@@ -56,13 +56,16 @@ export default function Work() {
             </p>
           </div>
         </div>
-        {/* <div className="container mx-auto px-20">
+        <div className="container mx-auto px-10 min-[1440px]:!px-20 hidden lg:flex flex-col gap-8">
           {testimonialList.map((testimonial, index) => (
-            <div className="h-screen flex items-center" key={index}>
-              <WorkCard {...testimonial} />
+            <div
+              className="h-auto min-[1440px]:!h-screen flex items-center"
+              key={index}
+            >
+              <WorkCard {...testimonial} index={index} />
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </Fragment>
   );

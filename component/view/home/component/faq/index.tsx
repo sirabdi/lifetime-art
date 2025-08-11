@@ -49,8 +49,8 @@ export default function Faq() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto grid grid-cols-1 min-[1440px]:!grid-cols-6 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
-          <div className="col-span-1 min-[1440px]:!col-span-2 flex flex-col justify-start h-full mb-12 min-[1440px]:!mb-0">
+        <div className="container mx-auto grid grid-cols-1 min-[1440px]:!grid-cols-8 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
+          <div className="col-span-1 min-[1440px]:!col-span-3 flex flex-col justify-start h-full mb-12 min-[1440px]:!mb-0">
             <div className="flex flex-col gap-1 items-center min-[1440px]:!items-start mb-12 min-[1440px]:!mb-18">
               <Label text="FAQs" />
               <p className="text-center min-[1440px]:!text-left text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px] mb-2">
@@ -63,11 +63,11 @@ export default function Faq() {
             <ButtonPrimary
               darkMode={false}
               label="Get in touch"
-              className="mx-auto"
+              className="mx-auto min-[1440px]:!mx-0"
               icon={<ArrowRightTopIcon className="text-white" />}
             />
           </div>
-          <div className="col-span-1 sm:col-span-4 flex flex-col gap-5">
+          <div className="col-span-1 min-[1440px]:col-span-5 flex flex-col gap-5">
             {faqList.map((item, index) => (
               <div
                 key={index}

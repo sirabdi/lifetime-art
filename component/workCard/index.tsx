@@ -55,7 +55,7 @@ export default function WorkCard({
       >
         <div
           ref={cardRef}
-          className={`w-full flex items-center gap-8 min-[1440px]:!gap-24 p-8 ${
+          className={`w-full flex items-center gap-8 min-[1440px]:!gap-16 p-8 ${
             inView
               ? "animate__animated animate__fadeInUp"
               : "opacity-0 invisible"
@@ -90,7 +90,11 @@ export default function WorkCard({
             </div>
             {/* High Resolution */}
             <div className="hidden min-[1440px]:flex items-start gap-2">
-              <QuoteIcon className="shrink-0" />
+              <QuoteIcon
+                className={`shrink-0 ${
+                  index % 2 === 1 ? "text-white" : "text-[#3D3D47]"
+                }`}
+              />
               <div className="flex flex-col gap-3">
                 <p
                   className={`tracking-[-0.2px] leading-[170%] text-lg ${

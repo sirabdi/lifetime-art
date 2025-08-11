@@ -58,7 +58,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-xl border border-[#E6E6E6] p-5">
+          <div className="bg-white rounded-xl border border-[#E6E6E6] p-5 h-fit">
             <form className="flex flex-col gap-4 w-full">
               <div>
                 <p className="font-medium text-[#101014] tracking-[-0.1px]">

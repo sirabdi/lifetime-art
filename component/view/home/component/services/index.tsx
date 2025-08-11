@@ -68,7 +68,7 @@ export default function Services() {
         </div>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-18 pb-[7.5rem] px-10 min-[1440px]:!px-20">
           <div className="flex flex-col justify-center items-start">
-            <div className="w-[295px] lg:w-[432px] xl:w-[560px] min-[1440px]:!w-[42.5rem] h-[337px] lg:h-[493px] xl:h-[639px] min-[1440px]:!h-[48.563rem] relative z-10 overflow-hidden rounded-xl">
+            <div className="w-[295px] lg:w-[432px] xl:w-[560px] min-[1440px]:!w-[600px] min-[1920px]:!w-[680px] h-[337px] lg:h-[493px] xl:h-[639px] min-[1440px]:!h-[685px] min-[1920px]:!h-[777px] relative z-10 overflow-hidden rounded-xl">
               <Image
                 src={"/kitchen-area.png"}
                 alt="LifetimeArt Hero Image"

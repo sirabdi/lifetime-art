@@ -33,11 +33,20 @@ body {
   animation: slider-infinite-reverse 100s linear infinite;
 }
 
-@media (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-    /* Styles for screen sizes between 1440px and 1959px */
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
+/* REACT SLICK SLIDER */
+.slick-track {
+  display: flex !important;
+  margin: 0.5rem !important;
+}
+
+.slick-slide {
+  padding: 0 !important;
+  margin: 0 20px 0 5px !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.about-us-slider-container .slick-slide {
+  height: 400px;
+  width: 320px;
 }

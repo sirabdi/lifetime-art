@@ -3,8 +3,19 @@
 import Label from "@/component/label";
 import WorkCard from "@/component/workCard";
 import { Fragment } from "react";
+import Slider from "react-slick";
 
 export default function Work() {
+  const settings = {
+    dots: true,
+    speed: 500,
+    arrows: false,
+    // autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   const testimonialList = [
     {
       imgCover: "/testimonial/testimonial-bg-1.png",
@@ -19,7 +30,7 @@ export default function Work() {
     },
     {
       imgCover: "/testimonial/testimonial-bg-2.png",
-      title: "Modern kitchen refit",
+      title: "Garden of eden",
       desc: "Our team designed and built a durable, visually appealing garden path to enhance the outdoor space. Using premium materials, we created a seamless walkway that blends naturally with the landscape, providing both functionality and aesthetic charm. The result is a stylish, well-crafted path that elevates the overall garden design.",
       testiWord:
         "The team at LifetimeArt did an amazing job on our garden path. It’s sturdy, looks fantastic, and has completely transformed our outdoor space. They listened to our vision and delivered exactly what we wanted—highly recommended!",
@@ -56,7 +67,7 @@ export default function Work() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto px-10 min-[1440px]:!px-20 hidden lg:flex flex-col gap-8">
+        <div className="container mx-auto px-10 min-[1440px]:!px-20 hidden sm:flex flex-col gap-8">
           {testimonialList.map((testimonial, index) => (
             <div
               className="h-auto min-[1440px]:!h-screen flex items-center"
@@ -65,6 +76,18 @@ export default function Work() {
               <WorkCard {...testimonial} index={index} />
             </div>
           ))}
+        </div>
+        <div className="block sm:hidden flex-col gap-12">
+          <Slider {...settings}>
+            {testimonialList.map((item, i) => (
+              <div
+                className="h-auto min-[1440px]:!h-screen flex flex-col"
+                key={i}
+              >
+                <WorkCard {...item} index={i} />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </Fragment>

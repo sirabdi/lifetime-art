@@ -45,11 +45,11 @@ export default function About() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto grid grid-cols-2 gap-4 py-[7.5rem] px-20">
-          <div className="flex flex-col justify-center h-full">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
+          <div className="flex flex-col items-start h-full">
             <div className="flex flex-col gap-1 mb-18">
               <Label text="About us" />
-              <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
+              <p className="text-[2.5rem] sm:text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
                 Home <br /> Improvement <br /> Specialists
               </p>
             </div>
@@ -67,10 +67,10 @@ export default function About() {
           </div>
         </div>
         <ImageSlider items={image} />
-        <div className="container mx-auto grid grid-cols-4 grid-flow-col gap-4 py-[7.5rem] px-20">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 min-[1440px]:!grid-cols-4 gap-28 sm:gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
           {aboutList.map((item, index) => {
             return (
-              <div key={index} className="w-[14.375rem]">
+              <div key={index} className="w-[86%] min-[1440px]:!w-[14.375rem]">
                 <p className="font-light text-7xl text-[#101014]">
                   {item.result}
                 </p>

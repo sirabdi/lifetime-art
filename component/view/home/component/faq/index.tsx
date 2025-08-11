@@ -49,31 +49,32 @@ export default function Faq() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto grid grid-cols-6 gap-4 py-[7.5rem] px-20">
-          <div className="col-span-2 flex flex-col justify-start h-full">
-            <div className="flex flex-col gap-1 mb-18">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-6 gap-4 py-[7.5rem] px-10 sm:px-20">
+          <div className="col-span-1 sm:col-span-2 flex flex-col justify-start h-full mb-12 sm:mb-0">
+            <div className="flex flex-col gap-1 items-center sm:items-start mb-12 sm:mb-18">
               <Label text="FAQs" />
-              <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px] mb-2">
+              <p className="text-center sm:text-left text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px] mb-2">
                 Answering Your <br /> Questions
               </p>
-              <p className="text-xl text-[#3D3D47] leading-[170%] tracking-[-0.3px] w-[30.125rem]">
+              <p className="text-xl text-center sm:text-left text-[#3D3D47] leading-[170%] tracking-[-0.3px] w-auto sm:w-[30.125rem]">
                 Got more questions? Send us your enquiry below
               </p>
             </div>
             <ButtonPrimary
               darkMode={false}
               label="Get in touch"
+              className="mx-auto"
               icon={<ArrowRightTopIcon className="text-white" />}
             />
           </div>
-          <div className="col-span-4 flex flex-col gap-5">
+          <div className="col-span-1 sm:col-span-4 flex flex-col gap-5">
             {faqList.map((item, index) => (
               <div
                 key={index}
                 className="bg-[#FAFAFA] rounded-xl border border-[#E6E6E6] py-6 px-5"
               >
                 <div className="flex items-center justify-between">
-                  <p className="text-xl font-medium text-[#101014] tracking-[-0.2px] leading-[30.8px]">
+                  <p className="text-xl font-medium text-[#101014] tracking-[-0.2px] leading-[30.8px] w-[70%] sm:w-full">
                     {item.question}
                   </p>
                   {/* <AddIcon /> */}
@@ -97,7 +98,7 @@ export default function Faq() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-[#3D3D47] tracking-[-0.1px] leading-[170%] w-[70%]">
+                  <p className="text-[#3D3D47] tracking-[-0.1px] leading-[170%] w-full sm:w-[70%]">
                     {item.answer}
                   </p>
                 </div>

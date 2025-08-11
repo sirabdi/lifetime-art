@@ -44,10 +44,10 @@ export default function Work() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto py-[7.5rem] px-20">
+        <div className="container mx-auto py-[7.5rem] px-5 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Our work" />
-            <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
+            <p className="text-center text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
               Get inspired by our work
             </p>
             <p className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]">
@@ -56,13 +56,13 @@ export default function Work() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto px-20">
+        {/* <div className="container mx-auto px-20">
           {testimonialList.map((testimonial, index) => (
             <div className="h-screen flex items-center" key={index}>
               <WorkCard {...testimonial} />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );

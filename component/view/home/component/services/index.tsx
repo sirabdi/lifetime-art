@@ -55,20 +55,20 @@ export default function Services() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2 bg-[#FAFAFA]">
-        <div className="container mx-auto py-[7.5rem] px-20">
+        <div className="container mx-auto py-[7.5rem] px-10 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Services" />
-            <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
+            <p className="text-5xl text-center text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
               What we do
             </p>
-            <p className="text-xl tracking-[-0.3px] leading-[170%] text-[#3D3D47]">
+            <p className="text-xl text-center tracking-[-0.3px] leading-[170%] text-[#3D3D47]">
               Find out which one of our services fit the needs of your project
             </p>
           </div>
         </div>
-        <div className="container mx-auto grid grid-cols-2 gap-24 pb-[7.5rem] px-20">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-24 pb-[7.5rem] px-10 sm:px-20">
           <div className="flex flex-col justify-center items-center">
-            <div className="w-[42.5rem] h-[48.563rem] relative overflow-hidden rounded-xl">
+            <div className="w-[295px] sm:w-[42.5rem] h-[337px] sm:h-[48.563rem] relative z-10 overflow-hidden rounded-xl">
               <Image
                 src={"/kitchen-area.png"}
                 alt="LifetimeArt Hero Image"

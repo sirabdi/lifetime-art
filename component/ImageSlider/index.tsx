@@ -11,7 +11,7 @@ export default function ImageSlider({ items }: Props) {
   const allItems = [...items, ...items];
   return (
     <Fragment>
-      <div className="overflow-hidden w-full">
+      <div className="overflow-hidden w-full relative -z-10">
         <div
           className="flex animate-slider-infinite"
           style={{ width: `${allItems.length * 400}px` }}
@@ -19,7 +19,7 @@ export default function ImageSlider({ items }: Props) {
           {allItems.map((src, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 w-[400px] h-[500px] mx-3 relative overflow-hidden"
+              className="flex-shrink-0 w-[320px] xl:w-[400px] h-[400px] xl:h-[500px] mx-3 relative overflow-hidden"
             >
               <Image
                 alt={`Slider item ${idx + 1}`}

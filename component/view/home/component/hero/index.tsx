@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import AvailableIcon from "@/component/icon/availebleIcon";
 import Button from "@/component/button";
-import ArrowRightTop from "@/component/icon/arrowRightTop";
+import ArrowRightTopIcon from "@/component/icon/arrowRightTopIcon";
 import Image from "next/image";
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
             <Button
               addIcon={true}
               label="Work with us"
-              icon={<ArrowRightTop />}
+              icon={<ArrowRightTopIcon />}
             />
           </div>
           <div className="flex flex-col items-center justify-center h-full">

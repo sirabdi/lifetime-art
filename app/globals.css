@@ -1,6 +1,29 @@
 @import "tailwindcss";
+@import "animate.css";
 
-/* REACT SLICK SLIDER */
-.slick-initialized .slick-slide {
-  margin: 1rem;
+/* SLIDER */
+@keyframes slider-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slider-infinite-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slider-infinite {
+  animation: slider-infinite 100s linear infinite;
+}
+
+.animate-slider-infinite-reverse {
+  animation: slider-infinite-reverse 100s linear infinite;
 }

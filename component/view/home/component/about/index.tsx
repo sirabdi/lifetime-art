@@ -1,7 +1,8 @@
 "use client";
 
-import Slider from "@/component/slider";
+import Label from "@/component/label";
 import { Fragment } from "react";
+import ImageSlider from "@/component/ImageSlider";
 
 export default function About() {
   const image = [
@@ -47,9 +48,7 @@ export default function About() {
         <div className="container mx-auto grid grid-cols-2 gap-4 py-[7.5rem]">
           <div className="flex flex-col justify-center h-full">
             <div className="flex flex-col gap-1 mb-18">
-              <div className="bg-[#28282C] py-2 px-3 rounded-full flex items-center gap-2 w-fit">
-                <p className="text-white font-semibold">About us</p>
-              </div>
+              <Label text="About us" />
               <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
                 Home <br /> Improvement <br /> Specialists
               </p>
@@ -67,7 +66,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <Slider items={image} />
+        <ImageSlider items={image} />
         <div className="container mx-auto grid grid-cols-4 grid-flow-col gap-4 py-[7.5rem]">
           {aboutList.map((item, index) => {
             return (

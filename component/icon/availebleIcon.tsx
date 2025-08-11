@@ -1,8 +1,4 @@
-type Props = {
-  //
-};
-
-const AvailableIcon = (props: Props) => {
+const AvailableIcon = () => {
   return (
     <svg
       width="19"

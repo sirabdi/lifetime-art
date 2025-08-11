@@ -1,8 +1,4 @@
-type Props = {
-  //
-};
-
-const ArrowRightTop = (props: Props) => {
+const ArrowRightTopIcon = () => {
   return (
     <svg
       width="11"
@@ -22,4 +18,4 @@ const ArrowRightTop = (props: Props) => {
   );
 };
 
-export default ArrowRightTop;
+export default ArrowRightTopIcon;

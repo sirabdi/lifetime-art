@@ -21,7 +21,7 @@ export default function Testimonial() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto py-[7.5rem]">
+        <div className="container mx-auto py-[7.5rem] px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Our work" />
             <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
@@ -34,7 +34,9 @@ export default function Testimonial() {
             </p>
           </div>
         </div>
-        <TestimoniSlider items={testimoniList} />
+        <div className="pb-[7.5rem]">
+          <TestimoniSlider items={testimoniList} />
+        </div>
       </div>
     </Fragment>
   );

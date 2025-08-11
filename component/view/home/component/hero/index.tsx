@@ -2,15 +2,15 @@
 
 import { Fragment } from "react";
 import AvailableIcon from "@/component/icon/availebleIcon";
-import Button from "@/component/button";
 import ArrowRightTopIcon from "@/component/icon/arrowRightTopIcon";
 import Image from "next/image";
+import ButtonPrimary from "@/component/button/primary";
 
 export default function Hero() {
   return (
     <Fragment>
       <div className="bg-[#101014] h-screen flex items-center">
-        <div className="container mx-auto grid grid-cols-2 gap-4">
+        <div className="container mx-auto grid grid-cols-2 gap-4 px-20">
           <div className="flex flex-col justify-center h-full w-[34.375rem]">
             <div className="flex flex-col gap-1 mb-18">
               <div className="bg-[#28282C] py-2 px-3 rounded-full flex items-center gap-2 w-fit">
@@ -25,10 +25,9 @@ export default function Hero() {
                 beautiful and functional spaces with quality craftsmanship.
               </p>
             </div>
-            <Button
-              addIcon={true}
+            <ButtonPrimary
               label="Work with us"
-              icon={<ArrowRightTopIcon />}
+              icon={<ArrowRightTopIcon className="text-[#101014]" />}
             />
           </div>
           <div className="flex flex-col items-center justify-center h-full">

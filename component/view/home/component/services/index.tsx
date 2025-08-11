@@ -55,7 +55,7 @@ export default function Services() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2 bg-[#FAFAFA]">
-        <div className="container mx-auto py-[7.5rem]">
+        <div className="container mx-auto py-[7.5rem] px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Services" />
             <p className="text-5xl text-[#101014] font-medium tracking-[-0.8px] leading-[55px]">
@@ -66,7 +66,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto grid grid-cols-2 gap-4 pb-[7.5rem]">
+        <div className="container mx-auto grid grid-cols-2 gap-24 pb-[7.5rem] px-20">
           <div className="flex flex-col justify-center items-center">
             <div className="w-[42.5rem] h-[48.563rem] relative overflow-hidden rounded-xl">
               <Image

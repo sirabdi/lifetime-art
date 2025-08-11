@@ -45,7 +45,7 @@ export default function About() {
   return (
     <Fragment>
       <div className="flex flex-col gap-2">
-        <div className="container mx-auto grid grid-cols-2 gap-4 py-[7.5rem]">
+        <div className="container mx-auto grid grid-cols-2 gap-4 py-[7.5rem] px-20">
           <div className="flex flex-col justify-center h-full">
             <div className="flex flex-col gap-1 mb-18">
               <Label text="About us" />
@@ -67,7 +67,7 @@ export default function About() {
           </div>
         </div>
         <ImageSlider items={image} />
-        <div className="container mx-auto grid grid-cols-4 grid-flow-col gap-4 py-[7.5rem]">
+        <div className="container mx-auto grid grid-cols-4 grid-flow-col gap-4 py-[7.5rem] px-20">
           {aboutList.map((item, index) => {
             return (
               <div key={index} className="w-[14.375rem]">

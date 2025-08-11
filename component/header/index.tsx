@@ -35,7 +35,7 @@ export default function Header() {
       {/* Web */}
       <div
         className={`fixed top-0 w-full transition-colors duration-300 hidden lg:block z-50 ${
-          scrolled ? " bg-white border border-[#d0d1db]" : ""
+          scrolled ? " bg-[#00000099]" : ""
         }`}
       >
         <div className="container mx-auto flex items-center justify-between py-10 px-20 p-5 lg:py-10 lg:px-[1.875rem] min-[1440px]:!px-20">
@@ -49,16 +49,12 @@ export default function Header() {
               priority
             />
           </div>
-          <ul
-            className={`flex items-center gap-12${
-              scrolled ? " text-[#101014]" : " text-white"
-            }`}
-          >
-            <li>About</li>
-            <li>Services</li>
-            <li>Our Work</li>
-            <li>FAQs</li>
-            <li>Contact</li>
+          <ul className={`flex items-center gap-12 text-white`}>
+            <li className="cursor-pointer">About</li>
+            <li className="cursor-pointer">Services</li>
+            <li className="cursor-pointer">Our Work</li>
+            <li className="cursor-pointer">FAQs</li>
+            <li className="cursor-pointer">Contact</li>
           </ul>
         </div>
       </div>

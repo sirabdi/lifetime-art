@@ -72,9 +72,9 @@ export default function Services() {
               <Image
                 src={"/kitchen-area.png"}
                 alt="LifetimeArt Hero Image"
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 loading="eager"
-                layout="fill"
+                fill
                 priority
               />
             </div>

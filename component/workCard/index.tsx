@@ -65,8 +65,8 @@ export default function WorkCard({
             <Image
               src={imgCover}
               alt="LifetimeArt Testimonial"
-              objectFit="cover"
-              layout="fill"
+              style={{ objectFit: "cover" }}
+              fill
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -108,8 +108,8 @@ export default function WorkCard({
                     <Image
                       src={personImag}
                       alt="LifetimeArt Testimonial"
-                      objectFit="cover"
-                      layout="fill"
+                      style={{ objectFit: "cover" }}
+                      fill
                     />
                   </div>
                   <p
@@ -144,8 +144,8 @@ export default function WorkCard({
                 <Image
                   src={personImag}
                   alt="LifetimeArt Testimonial"
-                  objectFit="cover"
-                  layout="fill"
+                  style={{ objectFit: "cover" }}
+                  fill
                 />
               </div>
               <p

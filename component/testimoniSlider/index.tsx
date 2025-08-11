@@ -24,7 +24,7 @@ export default function TestimoniSlider({ items }: Props) {
 
   return (
     <Fragment>
-      <div className="hidden sm:block flex-col gap-12">
+      <div className="hidden sm:flex flex-col gap-12">
         <div className="overflow-hidden w-full">
           <div
             className="flex animate-slider-infinite"
@@ -50,8 +50,8 @@ export default function TestimoniSlider({ items }: Props) {
                     <Image
                       src={"/testimonial/testimonial-1.png"}
                       alt="LifetimeArt Testimonial"
-                      objectFit="cover"
-                      layout="fill"
+                      style={{ objectFit: "cover" }}
+                      fill
                     />
                   </div>
                   <p className="tracking-[-0.1px] leading-[20.8px] text-[#101014]">
@@ -87,8 +87,8 @@ export default function TestimoniSlider({ items }: Props) {
                     <Image
                       src={"/testimonial/testimonial-1.png"}
                       alt="LifetimeArt Testimonial"
-                      objectFit="cover"
-                      layout="fill"
+                      style={{ objectFit: "cover" }}
+                      fill
                     />
                   </div>
                   <p className="tracking-[-0.1px] leading-[20.8px] text-[#101014]">
@@ -122,8 +122,8 @@ export default function TestimoniSlider({ items }: Props) {
                   <Image
                     src={"/testimonial/testimonial-1.png"}
                     alt="LifetimeArt Testimonial"
-                    objectFit="cover"
-                    layout="fill"
+                    style={{ objectFit: "cover" }}
+                    fill
                   />
                 </div>
                 <p className="tracking-[-0.1px] leading-[20.8px] text-[#101014]">

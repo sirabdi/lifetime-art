@@ -37,9 +37,9 @@ export default function ImageSlider({ items }: Props) {
             >
               <Image
                 alt={`Slider item ${idx + 1}`}
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 loading="eager"
-                layout="fill"
+                fill
                 src={src}
                 priority
               />
@@ -56,9 +56,9 @@ export default function ImageSlider({ items }: Props) {
             >
               <Image
                 alt={`Slider item ${idx + 1}`}
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 loading="eager"
-                layout="fill"
+                fill
                 src={src}
                 priority
               />

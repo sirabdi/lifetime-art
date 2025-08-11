@@ -36,9 +36,9 @@ export default function Hero() {
               <Image
                 src={"/dining-area-brazilian-folklore-decor.png"}
                 alt="LifetimeArt Hero Image"
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 loading="eager"
-                layout="fill"
+                fill
                 priority
               />
             </div>
@@ -51,9 +51,9 @@ export default function Hero() {
               src={"/dining-area-brazilian-folklore-decor.png"}
               alt="LifetimeArt Hero Image"
               className="opacity-20"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               loading="eager"
-              layout="fill"
+              fill
               priority
             />
           </div>

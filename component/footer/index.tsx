@@ -60,7 +60,7 @@ export default function Footer() {
                   <li
                     className="text-[#D0D1DB] text-lg leading-[27px] cursor-pointer tracking-[-0.1px]"
                     onClick={() => {
-                      document.getElementById("testimonials")?.scrollIntoView({
+                      document.getElementById("testimonial")?.scrollIntoView({
                         behavior: "smooth",
                       });
                     }}

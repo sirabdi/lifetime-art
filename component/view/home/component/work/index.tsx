@@ -30,12 +30,12 @@ export default function Work() {
     },
     {
       imgCover: "/testimonial/testimonial-bg-2.png",
-      title: "Garden of eden",
+      title: "External garden path build",
       desc: "Our team designed and built a durable, visually appealing garden path to enhance the outdoor space. Using premium materials, we created a seamless walkway that blends naturally with the landscape, providing both functionality and aesthetic charm. The result is a stylish, well-crafted path that elevates the overall garden design.",
       testiWord:
         "The team at LifetimeArt did an amazing job on our garden path. It’s sturdy, looks fantastic, and has completely transformed our outdoor space. They listened to our vision and delivered exactly what we wanted—highly recommended!",
-      duration: "4 weeks",
-      type: "Garden",
+      duration: "6 weeks",
+      type: "External Works",
       personImag: "/testimonial/testimonial-2.png",
       personName: "Michael Turner",
     },
@@ -45,10 +45,10 @@ export default function Work() {
       desc: "We revitalized this bathroom with a fresh, modern design, incorporating high-end tiling, sleek fixtures, and efficient lighting. The layout was optimized to maximize space, creating a luxurious and relaxing atmosphere. The final result is a beautifully crafted bathroom that enhances both comfort and functionality.",
       testiWord:
         "LifetimeArt completely transformed our bathroom, making it both beautiful and highly functional. The craftsmanship was outstanding, and the team was professional and communicative throughout. We couldn’t be happier with the result!",
-      duration: "4 weeks",
+      duration: "7 weeks",
       type: "Bathroom",
-      personImag: "/testimonial/testimonial-3.png",
-      personName: "Laura Davies",
+      personImag: "/testimonial/testimonial-1.png",
+      personName: "Rachel Morgan",
     },
   ];
 

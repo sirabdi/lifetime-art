@@ -12,37 +12,37 @@ export default function Faq() {
     {
       question: "What area are you based in?",
       answer:
-        "We primarily serve London and surrounding areas, but depending on the project, we may be able to travel further. Get in touch to discuss your location and project needs.",
+        "We primarily serve London and the surrounding areas, but depending on the project, we can travel further. Contact us to discuss your location and requirements.",
     },
     {
       question: "How long does a typical project take?",
       answer:
-        "Project timelines can vary widely based on the scope and complexity of the work involved. Generally, we recommend allowing at least 4-6 weeks for most projects, but we can provide a more accurate estimate after discussing your specific needs.",
+        "Project timelines vary depending on size and complexity. We’ll provide an estimated schedule during your consultation and keep you updated throughout the process.",
     },
     {
       question: "Do you offer free quotes?",
       answer:
-        "Yes, we provide free quotes for all potential projects. Simply get in touch with us to discuss your requirements, and we'll be happy to provide you with a detailed estimate.",
+        "Yes, we offer free, no-obligation quotes. Our team will visit your property, assess your needs, and provide a detailed breakdown.",
     },
     {
       question: "Will I need planning permission for my project?",
       answer:
-        "Yes, in most cases, you will need planning permission for your project. However, some smaller projects may be exempt. It's best to consult with us to determine the specific requirements for your project.",
+        "This depends on the type and scope of your project. We can guide you through local regulations and help with applications if needed",
     },
     {
       question: "Do you provide a guarantee for your work?",
       answer:
-        "Yes, we offer a guarantee for our work. If you encounter any issues after the project is completed, please reach out to us, and we'll do our best to resolve them.",
+        "Absolutely. All of our work is backed by a guarantee for quality and durability, giving you peace of mind.",
     },
     {
       question: "Can I stay in my home while the work is being done?",
       answer:
-        "Yes, in most cases, you can stay in your home while the work is being done. However, there may be some instances where it is not feasible due to safety concerns or the nature of the work. We will discuss this with you beforehand to ensure your comfort and safety.",
+        "In most cases, yes—though it may depend on the scope of work and areas affected. We’ll discuss options to minimise disruption.",
     },
     {
       question: "How do I get started with a project?",
       answer:
-        "To get started with a project, simply reach out to us through our contact form or give us a call. We'll schedule a consultation to discuss your ideas, requirements, and any questions you may have. From there, we can provide you with a detailed proposal and timeline for your project.",
+        "Simply get in touch with our team. We’ll arrange a consultation, discuss your ideas, and prepare a tailored plan and quote.",
     },
   ];
 

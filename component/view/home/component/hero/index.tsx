@@ -9,10 +9,10 @@ import ButtonPrimary from "@/component/button/primary";
 export default function Hero() {
   return (
     <Fragment>
-      <div className="bg-[#101014] h-screen flex items-end min-[1440px]:items-center pb-8 min-[1440px]:pb-0 relative -z-20 min-[1440px]:z-auto">
-        <div className="container mx-auto grid grid-cols-1 min-[1440px]:grid-cols-2 gap-4 px-10 min-[1440px]:px-20 relative mb-3 lg:mb-8 min-[1440px]:!mb-0">
+      <div className="bg-[#101014] h-screen flex items-end min-[1440px]:items-center pb-8 min-[1440px]:pb-0 relative min-[1440px]:z-auto">
+        <div className="container mx-auto grid grid-cols-1 min-[1440px]:grid-cols-2 gap-4 px-10 min-[1440px]:px-20 relative mb-3 lg:mb-8 min-[1440px]:!mb-0 z-50">
           <div className="flex flex-col justify-center h-full w-full min-[1440px]:w-[34.375rem]">
-            <div className="flex flex-col gap-2 mb-18">
+            <div className="flex flex-col gap-2 mb-12 xl:mb-18">
               <div
                 className="bg-[#28282C] py-2 px-3 rounded-full flex items-center gap-2 w-fit"
                 data-aos="zoom-in-up"
@@ -80,6 +80,11 @@ export default function Hero() {
               data-aos="zoom-in-up"
               data-aos-duration="300"
               data-aos-delay="1500"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             />
           </div>
           {/* Web */}
@@ -101,7 +106,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Mobile */}
-        <div className="absolute w-full px-5 -z-10 block min-[1440px]:!hidden">
+        <div className="absolute w-full px-5 z-10 block min-[1440px]:!hidden">
           <div
             className="rounded-xl w-full h-[calc(100vh-130px)] bg-[#101014] mx-auto relative overflow-hidden"
             data-aos="zoom-in"

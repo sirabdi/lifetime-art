@@ -20,7 +20,7 @@ export default function Testimonial() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2" id="testimonial">
         <div className="container mx-auto py-[7.5rem] px-10 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Our work" data-aos="fade-up" data-aos-duration="300" />

@@ -48,7 +48,7 @@ export default function Faq() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2 overflow-hidden">
+      <div className="flex flex-col gap-2 overflow-hidden" id="faqs">
         <div className="container mx-auto grid grid-cols-1 min-[1440px]:!grid-cols-8 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
           <div className="col-span-1 min-[1440px]:!col-span-3 flex flex-col justify-start h-full mb-12 min-[1440px]:!mb-0">
             <div className="flex flex-col gap-1 items-center min-[1440px]:!items-start mb-12 min-[1440px]:!mb-18">
@@ -87,6 +87,11 @@ export default function Faq() {
               label="Get in touch"
               className="mx-auto min-[1440px]:!mx-0"
               icon={<ArrowRightTopIcon className="text-white" />}
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             />
           </div>
           <div
@@ -101,7 +106,7 @@ export default function Faq() {
                 className="bg-[#FAFAFA] rounded-xl border border-[#E6E6E6] py-6 px-5"
               >
                 <div className="flex items-center justify-between">
-                  <p className="text-xl font-medium text-[#101014] tracking-[-0.2px] leading-[30.8px] w-[70%] sm:w-full">
+                  <p className="text-xl font-medium text-[#101014] tracking-[-0.2px] leading-[30.8px] w-[70%] xl:w-full">
                     {item.question}
                   </p>
                   {/* <AddIcon /> */}
@@ -125,7 +130,7 @@ export default function Faq() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-[#3D3D47] tracking-[-0.1px] leading-[170%] w-full sm:w-[70%]">
+                  <p className="text-[#3D3D47] tracking-[-0.1px] leading-[170%] w-full xl:w-[70%]">
                     {item.answer}
                   </p>
                 </div>

@@ -55,13 +55,13 @@ export default function WorkCard({
       >
         <div
           ref={cardRef}
-          className={`w-full flex flex-col sm:flex-row items-center gap-8 min-[1440px]:!gap-16 p-5 sm:p-8 ${
+          className={`w-full flex flex-col xl:flex-row items-center gap-8 min-[1440px]:!gap-16 p-5 xl:p-8 ${
             inView
               ? "animate__animated animate__fadeInUp"
               : "opacity-0 invisible"
           }`}
         >
-          <div className="h-[380px] min-[1440px]:!h-[31.25rem] w-full sm:w-[432px] min-[1440px]:!w-[40.5rem] rounded-[0.625rem] shrink-0 relative overflow-hidden">
+          <div className="h-[380px] min-[1440px]:!h-[31.25rem] w-full xl:w-[432px] min-[1440px]:!w-[40.5rem] rounded-[0.625rem] shrink-0 relative overflow-hidden">
             <Image
               src={imgCover}
               alt="LifetimeArt Testimonial"

@@ -50,7 +50,12 @@ export default function ImageSlider({ items }: Props) {
           ))}
         </div>
       </div>
-      <div className="block sm:hidden about-us-slider-container">
+      <div
+        className="block sm:hidden about-us-slider-container"
+        data-aos="fade-up"
+        data-aos-duration="400"
+        data-aos-delay="1200"
+      >
         <Slider {...settings}>
           {items.map((src, idx) => (
             <div

@@ -7,6 +7,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   darkMode?: boolean;
   icon: ReactElement;
   className?: string;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export default function ButtonPrimary({
@@ -14,11 +15,13 @@ export default function ButtonPrimary({
   icon,
   darkMode = true,
   className,
+  onClick,
   ...rest
 }: Props) {
   return (
     <Fragment>
       <button
+        onClick={onClick}
         {...rest}
         className={`py-2.5 px-4 rounded-full cursor-pointer ${
           darkMode

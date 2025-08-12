@@ -106,7 +106,12 @@ export default function TestimoniSlider({ items }: Props) {
           </div>
         </div>
       </div>
-      <div className="block sm:hidden flex-col gap-12">
+      <div
+        className="block sm:hidden flex-col gap-12"
+        data-aos="fade-in"
+        data-aos-duration="400"
+        data-aos-delay="1200"
+      >
         <Slider {...settings}>
           {items.map((item, i) => (
             <div

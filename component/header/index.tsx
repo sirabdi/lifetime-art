@@ -14,11 +14,7 @@ export default function Header() {
       setScrolled(window.scrollY > 10);
     };
     const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setIsMenuMobileOpen(false);
-      } else {
-        setIsMenuMobileOpen(true);
-      }
+      setIsMenuMobileOpen(false);
     };
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
@@ -29,6 +25,15 @@ export default function Header() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    if (isMenuMobileOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    console.log("isMenuMobileOpen ", isMenuMobileOpen);
+  }, [isMenuMobileOpen]);
 
   return (
     <Fragment>
@@ -55,6 +60,11 @@ export default function Header() {
               data-aos="fade-down"
               data-aos-duration="300"
               data-aos-delay="0"
+              onClick={() => {
+                document.getElementById("about")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             >
               About
             </li>
@@ -63,6 +73,11 @@ export default function Header() {
               data-aos="fade-down"
               data-aos-duration="300"
               data-aos-delay="100"
+              onClick={() => {
+                document.getElementById("services")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             >
               Services
             </li>
@@ -71,6 +86,11 @@ export default function Header() {
               data-aos="fade-down"
               data-aos-duration="300"
               data-aos-delay="200"
+              onClick={() => {
+                document.getElementById("our-work")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             >
               Our Work
             </li>
@@ -79,6 +99,11 @@ export default function Header() {
               data-aos="fade-down"
               data-aos-duration="300"
               data-aos-delay="300"
+              onClick={() => {
+                document.getElementById("faqs")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             >
               FAQs
             </li>
@@ -87,6 +112,11 @@ export default function Header() {
               data-aos="fade-down"
               data-aos-duration="300"
               data-aos-delay="400"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
             >
               Contact
             </li>
@@ -146,19 +176,54 @@ export default function Header() {
           <ul
             className={`flex flex-col items-start gap-8 text-white mt-32 px-5`}
           >
-            <li className="text-2xl text-white tracking-[-1px] leading-[120%]">
+            <li
+              className="text-2xl text-white tracking-[-1px] leading-[120%]"
+              onClick={() => {
+                document.getElementById("about")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               About
             </li>
-            <li className="text-2xl text-white tracking-[-1px] leading-[120%]">
+            <li
+              className="text-2xl text-white tracking-[-1px] leading-[120%]"
+              onClick={() => {
+                document.getElementById("services")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               Services
             </li>
-            <li className="text-2xl text-white tracking-[-1px] leading-[120%]">
+            <li
+              className="text-2xl text-white tracking-[-1px] leading-[120%]"
+              onClick={() => {
+                document.getElementById("our-work")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               Our Work
             </li>
-            <li className="text-2xl text-white tracking-[-1px] leading-[120%]">
+            <li
+              className="text-2xl text-white tracking-[-1px] leading-[120%]"
+              onClick={() => {
+                document.getElementById("faqs")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               FAQs
             </li>
-            <li className="text-2xl text-white tracking-[-1px] leading-[120%]">
+            <li
+              className="text-2xl text-white tracking-[-1px] leading-[120%]"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               Contact
             </li>
           </ul>

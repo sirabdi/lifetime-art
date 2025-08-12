@@ -10,9 +10,9 @@ import ButtonBase from "@/component/button/base";
 export default function Contact() {
   return (
     <Fragment>
-      <div className="flex flex-col gap-2 px-5 sm:px-5">
+      <div className="flex flex-col gap-2 px-5 xl:px-5" id="contact">
         <div
-          className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-24 min-[1440px]:!gap-4 p-20 bg-[#101014] rounded-xl px-5 min-[1440px]:!px-20"
+          className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-24 min-[1440px]:!gap-4 p-20 bg-[#101014] rounded-xl px-5 min-[1440px]:!px-20"
           data-aos="fade-up"
           data-aos-duration="500"
         >
@@ -22,7 +22,7 @@ export default function Contact() {
               <p className="text-5xl text-[#FFFFFF] font-medium tracking-[-0.8px] leading-[55px] mb-2">
                 Get in Touch
               </p>
-              <p className="text-xl text-[#D0D1DB] leading-[170%] tracking-[-0.3px] w-full sm:w-[30.125rem]">
+              <p className="text-xl text-[#D0D1DB] leading-[170%] tracking-[-0.3px] w-full xl:w-[30.125rem]">
                 For any inquiries or to explore your vision further, we invite
                 you to contact our professional team using the details provided
                 below.

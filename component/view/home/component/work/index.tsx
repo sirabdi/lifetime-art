@@ -54,7 +54,7 @@ export default function Work() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2" id="our-work">
         <div className="container mx-auto py-[7.5rem] px-5 sm:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Our work" data-aos="fade-up" data-aos-duration="300" />
@@ -77,7 +77,7 @@ export default function Work() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto px-10 min-[1440px]:!px-20 hidden sm:flex flex-col gap-8">
+        <div className="container mx-auto px-10 min-[1440px]:!px-20 hidden xl:flex flex-col gap-8">
           {testimonialList.map((testimonial, index) => (
             <div
               className="h-auto min-[1440px]:!h-screen flex items-center"
@@ -90,7 +90,12 @@ export default function Work() {
             </div>
           ))}
         </div>
-        <div className="block sm:hidden flex-col gap-12">
+        <div
+          className="block xl:hidden flex-col gap-12"
+          data-aos="fade-in"
+          data-aos-duration="400"
+          data-aos-delay="900"
+        >
           <Slider {...settings}>
             {testimonialList.map((item, i) => (
               <div

@@ -44,7 +44,7 @@ export default function About() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2 overflow-hidden">
+      <div className="flex flex-col gap-2 overflow-hidden" id="about">
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 py-[7.5rem] px-10 min-[1440px]:!px-20">
           <div className="flex flex-col items-start h-full">
             <div className="flex flex-col gap-1 mb-18">

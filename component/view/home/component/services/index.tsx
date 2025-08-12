@@ -54,8 +54,11 @@ export default function Services() {
 
   return (
     <Fragment>
-      <div className="flex flex-col gap-2 bg-[#FAFAFA] overflow-hidden">
-        <div className="container mx-auto py-[7.5rem] px-10 sm:px-20">
+      <div
+        className="flex flex-col gap-2 bg-[#FAFAFA] overflow-hidden"
+        id="services"
+      >
+        <div className="container mx-auto py-[7.5rem] px-10 xl:px-20">
           <div className="flex flex-col justify-center items-center gap-2">
             <Label text="Services" data-aos="fade-up" data-aos-duration="300" />
             <p
@@ -76,8 +79,8 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-18 pb-[7.5rem] px-10 min-[1440px]:!px-20">
-          <div className="flex flex-col justify-center items-start">
+        <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-18 pb-[7.5rem] px-10 min-[1440px]:!px-20">
+          <div className="flex flex-col justify-center items-center lg:items-start">
             <div
               className="w-[295px] lg:w-[432px] xl:w-[560px] min-[1440px]:!w-[600px] min-[1920px]:!w-[680px] h-[337px] lg:h-[493px] xl:h-[639px] min-[1440px]:!h-[685px] min-[1920px]:!h-[777px] relative z-10 overflow-hidden rounded-xl"
               data-aos="zoom-in"

@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AnimationProvider } from "@/provider/animationContext";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
@@ -29,6 +31,7 @@ export default function RootLayout({
         <AnimationProvider>
           <Header />
           {children}
+          <SpeedInsights />
           <Footer />
         </AnimationProvider>
       </body>
